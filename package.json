@@ -1,0 +1,64 @@
+{
+  "name": "expnsr-webapp",
+  "version": "1.0.0",
+  "description": "A SPA to connect to the expnsr Laravel API. Expnsr is a checkbook register and money management application.",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "karma start",
+    "test-watch": "karma start --auto-watch --no-single-run",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandon14/expnsr-webapp.git"
+  },
+  "author": "Brandon Clothier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandon14/expnsr-webapp/issues"
+  },
+  "homepage": "https://github.com/brandon14/expnsr-webapp",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-aria": "^1.6.1",
+    "angular-breadcrumb": "^0.5.0",
+    "angular-material": "^1.1.1",
+    "angular-ui-router": "^0.4.2",
+    "flat-social-icons": "0.0.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.1",
+    "autoprefixer": "^6.7.0",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.26.0",
+    "istanbul-instrumenter-loader": "^1.2.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^2.0.2",
+    "node-libs-browser": "^2.0.0",
+    "node-sass": "^4.4.0",
+    "null-loader": "^0.1.1",
+    "phantomjs-prebuilt": "^2.1.14",
+    "postcss-loader": "^1.2.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
