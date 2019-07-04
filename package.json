@@ -9,7 +9,9 @@
     "test-watch": "karma start --auto-watch --no-single-run",
     "dev": "npm run dev-server",
     "start": "node server",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -48,7 +50,8 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "underscore": "^1.8.3",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.1",
@@ -66,5 +69,6 @@
     "webpack-dev-middleware": "^1.9.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.15.0"
-  }
+  },
+  "snyk": true
 }
